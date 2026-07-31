@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://be8qbmt0fe144"]
 
+[ext_resource type="Script" uid="uid://c630fm16jt3m2" path="res://scripts/player.gd" id="1_dqkch"]
 [ext_resource type="Texture2D" uid="uid://bexvrd71riery" path="res://models/strange-thing_sunflower leaves.jpg" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://cghk1tic4onh4" path="res://models/strange-thing_skin (copy 1).jpg" id="2_dqkch"]
 [ext_resource type="Texture2D" uid="uid://lac3nvu7bqqo" path="res://models/strange-thing_black.jpg" id="3_qlg0r"]
@@ -689,6 +690,7 @@ _data = {
 }
 
 [node name="player" type="CharacterBody3D" unique_id=1769553434]
+script = ExtResource("1_dqkch")
 
 [node name="strange-thing" type="Node3D" parent="." unique_id=162224859]
 transform = Transform3D(0.25613093, 0, 0, 0, 0.25613093, 0, 0, 0, 0.25613093, 1, 0, 0)
