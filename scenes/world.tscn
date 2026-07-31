@@ -1701,7 +1701,7 @@ transform = Transform3D(0.50679576, 0, 0, 0, 0.50679576, 0, 0, 0, 0.50679576, 0,
 [node name="city" type="Node3D" parent="." unique_id=1209937316]
 
 [node name="building" type="RigidBody3D" parent="city" unique_id=1549988065]
-transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, 20.850021, 5.3306737, -19.990763)
+transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, 20.850021, 5.213671, -19.990763)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="city/building" unique_id=1980739716]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24705505, 23.041828, 0.09321594)
@@ -1768,7 +1768,7 @@ transform = Transform3D(22.559965, 0, 0, 0, 1, 0, 0, 0, 20, 0, -37.90677, 0)
 mesh = SubResource("ArrayMesh_mnt67")
 
 [node name="building2" type="RigidBody3D" parent="city" unique_id=1872905609]
-transform = Transform3D(0.1442948, 0, 0, 0, 0.1442948, 0, 0, 0, 0.1442948, 20.850021, 5.3306737, 21.588316)
+transform = Transform3D(0.1442948, 0, 0, 0, 0.1442948, 0, 0, 0, 0.1442948, 20.850021, 5.169396, 21.588316)
 
 [node name="Cube" type="MeshInstance3D" parent="city/building2" unique_id=1850300251]
 transform = Transform3D(17.04255, 0, 0, 0, 63.57947, 0, 0, 0, 18.22971, 0, 24.94852, 0)
@@ -2010,7 +2010,7 @@ transform = Transform3D(22.559965, 0, 0, 0, 1, 0, 0, 0, 20, 0, -37.90677, 0)
 mesh = SubResource("ArrayMesh_mnt67")
 
 [node name="building4" type="RigidBody3D" parent="city" unique_id=1278581885]
-transform = Transform3D(0.1442948, 0, 0, 0, 0.1442948, 0, 0, 0, 0.1442948, -50.954132, 5.3306737, 21.588316)
+transform = Transform3D(0.1442948, 0, 0, 0, 0.1442948, 0, 0, 0, 0.1442948, -50.954132, 5.188497, 21.588316)
 
 [node name="Cube" type="MeshInstance3D" parent="city/building4" unique_id=702525885]
 transform = Transform3D(17.04255, 0, 0, 0, 63.57947, 0, 0, 0, 18.22971, 0, 24.94852, 0)
@@ -2349,7 +2349,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.0
 shape = SubResource("BoxShape3D_cena2")
 
 [node name="building" type="RigidBody3D" parent="city 2" unique_id=774586684]
-transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, -1.8568649, 5.3306737, 25.434855)
+transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, -1.8568649, 5.155071, 25.434855)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/building" unique_id=1384525533]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24705505, 23.041828, 0.09321594)
