@@ -693,7 +693,8 @@ _data = {
 script = ExtResource("1_dqkch")
 
 [node name="strange-thing" type="Node3D" parent="." unique_id=162224859]
-transform = Transform3D(0.25613093, 0, 0, 0, 0.25613093, 0, 0, 0, 0.25613093, 1, 0, 0)
+unique_name_in_owner = true
+transform = Transform3D(-1.1195838e-08, 0, 0.2561309, 0, 0.2561309, 0, -0.2561309, 0, -1.1195838e-08, -0.049881876, 0, -0.5498818)
 
 [node name="Cube" type="MeshInstance3D" parent="strange-thing" unique_id=358831340]
 transform = Transform3D(0, 1, -4.371139e-08, 0.7458383, 1.9106855e-15, 4.371139e-08, 3.2601626e-08, -4.371139e-08, -1, -4.398501, 1.0775539, 0)
@@ -720,12 +721,21 @@ transform = Transform3D(0.9451011, 0, 0, 0, 1.1444722, 0, 0, 0, 0.9310526, -1.91
 mesh = SubResource("ArrayMesh_8ro4d")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1474011740]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15893555, -0.29174805, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.049881816, -0.29174805, 0.60905373)
 shape = SubResource("CapsuleShape3D_cena2")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1125113354]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.50929004, 0.8133563, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.049881846, 0.8133563, -0.059171885)
 shape = SubResource("CapsuleShape3D_txqlw")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=770806073]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_qlg0r")
+speed_scale = 4.0
+
+[node name="pivot_point" type="SpringArm3D" parent="." unique_id=492255080]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 0, 0.6616261, 0.73836756)
+spring_length = 4.74
+
+[node name="Camera3D" type="Camera3D" parent="pivot_point" unique_id=1396079757]
