@@ -10956,3 +10956,9 @@ transform = Transform3D(-1.8703759e-08, 0, -1.2751572, -3.740751e-08, -0.2924609
 
 [node name="road12" parent="roads" unique_id=122607172 instance=ExtResource("2_4wyf3")]
 transform = Transform3D(-1.6504051e-08, 0, -0.29246098, 0, 0.292461, 0, 0.3775687, 0, -1.2783876e-08, -18.695124, -0.27567005, -7.796469)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=643798284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.227545, -0.35986328, -39.683228)
+use_collision = true
+size = Vector3(39.868446, 0.28027344, 32.184303)
+material = SubResource("StandardMaterial3D_qhqgy")
