@@ -24,14 +24,18 @@ func _physics_process(delta):
 	if input_direction.length() > 0:
 		input_direction = input_direction.normalized()
 	if Input.is_action_pressed("sprint"):
-		speed = 7
+		speed = 10
+		%AnimationPlayer.speed_scale = 40
 	else:
-		speed = 5
+		speed = 4
+		%AnimationPlayer.speed_scale = 9
 	if not is_on_floor():
 		velocity.y -= 9.8 * 3 * delta 
 	velocity.x = input_direction.x * speed
 	velocity.z = input_direction.z * speed
-	
+	if is_on_floor():
+		if Input.is_action_pressed("jump"):
+			velocity.y = 10
 	if input_direction.length() > 0:
 		%AnimationPlayer.play("move")
 	else:
