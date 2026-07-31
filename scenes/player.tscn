@@ -397,10 +397,6 @@ shadow_mesh = SubResource("ArrayMesh_3xw4g")
 radius = 0.68603516
 height = 1.5079346
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_txqlw"]
-radius = 0.24853516
-height = 0.5131836
-
 [sub_resource type="Animation" id="Animation_qhqgy"]
 length = 0.001
 tracks/0/type = "value"
@@ -724,10 +720,6 @@ mesh = SubResource("ArrayMesh_8ro4d")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.049881816, -0.29174805, 0.60905373)
 shape = SubResource("CapsuleShape3D_cena2")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1125113354]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.049881846, 0.8133563, -0.059171885)
-shape = SubResource("CapsuleShape3D_txqlw")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=770806073]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_qlg0r")
@@ -740,5 +732,6 @@ spring_length = 4.74
 
 [node name="Camera3D" type="Camera3D" parent="pivot_point" unique_id=1396079757]
 
-[node name="Marker3D" type="Marker3D" parent="pivot_point" unique_id=2132959959]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.496911e-07, 0, -2)
+[node name="muzzle" type="Node3D" parent="." unique_id=646528344]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6873145, -4.4837327)
