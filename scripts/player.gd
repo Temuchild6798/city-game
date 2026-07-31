@@ -50,7 +50,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		%pivot_point.rotation_degrees.x -= event.relative.y * 0.3
 		%pivot_point.rotation_degrees.x = clamp(%pivot_point.rotation_degrees.x, -60, 60)
 func use_item():
-	if Input.is_action_pressed("shoot"):
+	if Input.is_action_just_pressed("shoot"):
 		const boulder = preload("res://scenes/boulder.tscn")
 		var new_boulder = boulder.instantiate()
 		print("muzzle global pos: ", %muzzle.global_position)
