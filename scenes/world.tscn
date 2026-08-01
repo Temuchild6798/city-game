@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ej5ih48476w2" path="res://scenes/ragdoll_thing_new.tscn" id="5_71j4m"]
 [ext_resource type="Script" uid="uid://diyfynm03tgok" path="res://scripts/spawner.gd" id="6_qfnet"]
 [ext_resource type="Script" uid="uid://bpb714gdan6au" path="res://scripts/path_follow_3daa.gd" id="7_i7141"]
+[ext_resource type="AudioStream" uid="uid://bb5c2rpnrugdw" path="res://other-assets/oldmacdonaldtrump.ogg" id="8_4mrxx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5uuo"]
 sky_top_color = Color(0.04254709, 0.56455094, 0.81999105, 1)
@@ -11011,3 +11012,7 @@ script = ExtResource("7_i7141")
 
 [node name="ragdoll-thing" parent="Path3D2/PathFollow3D" unique_id=129806134 instance=ExtResource("5_71j4m")]
 transform = Transform3D(-0.32353097, 0, -4.885182e-08, 0, 0.32353097, 0, 4.885182e-08, 0, -0.32353097, -0.19611692, -0.023809195, 0.025980711)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2030803203]
+stream = ExtResource("8_4mrxx")
+autoplay = true

@@ -20,6 +20,10 @@ config/icon="uid://cuctmol0bgb05"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[global_group]
+
+house=""
+
 [input]
 
 reload={
