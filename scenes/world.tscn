@@ -1722,7 +1722,7 @@ transform = Transform3D(0.50679576, 0, 0, 0, 0.50679576, 0, 0, 0, 0.50679576, 0,
 
 [node name="city" type="Node3D" parent="." unique_id=1209937316]
 
-[node name="building" type="RigidBody3D" parent="city" unique_id=1549988065]
+[node name="building" type="RigidBody3D" parent="city" unique_id=1549988065 groups=["house"]]
 transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, 20.850021, 5.213671, -19.990763)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="city/building" unique_id=1980739716]
@@ -1789,7 +1789,7 @@ mesh = SubResource("ArrayMesh_t0qxv")
 transform = Transform3D(22.559965, 0, 0, 0, 1, 0, 0, 0, 20, 0, -37.90677, 0)
 mesh = SubResource("ArrayMesh_mnt67")
 
-[node name="building2" type="RigidBody3D" parent="city" unique_id=1872905609]
+[node name="building2" type="RigidBody3D" parent="city" unique_id=1872905609 groups=["house"]]
 transform = Transform3D(0.1442948, 0, 0, 0, 0.1442948, 0, 0, 0, 0.1442948, 20.850021, 5.169396, 21.588316)
 
 [node name="Cube" type="MeshInstance3D" parent="city/building2" unique_id=1850300251]
@@ -1856,7 +1856,7 @@ mesh = SubResource("ArrayMesh_mnt67")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24705505, 23.041828, 0.09321594)
 shape = SubResource("BoxShape3D_txqlw")
 
-[node name="differentshop" type="RigidBody3D" parent="city" unique_id=575685167]
+[node name="differentshop" type="RigidBody3D" parent="city" unique_id=575685167 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, 20.660877, 2.9578805, -12.721041)
 
 [node name="Cube" type="MeshInstance3D" parent="city/differentshop" unique_id=1992380960]
@@ -1874,7 +1874,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop" type="RigidBody3D" parent="city" unique_id=390654908]
+[node name="shop" type="RigidBody3D" parent="city" unique_id=390654908 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 20.540894, 2.9960332, -7.9115295)
 
 [node name="Cube" type="MeshInstance3D" parent="city/shop" unique_id=1080744206]
@@ -1892,7 +1892,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore" type="RigidBody3D" parent="city" unique_id=444421003]
+[node name="uhhidkanytmore" type="RigidBody3D" parent="city" unique_id=444421003 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 20.62236, 2.969675, -3.3427372)
 
 [node name="Cube" type="MeshInstance3D" parent="city/uhhidkanytmore" unique_id=1019884045]
@@ -1910,7 +1910,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="differentshop2" type="RigidBody3D" parent="city" unique_id=1046172077]
+[node name="differentshop2" type="RigidBody3D" parent="city" unique_id=1046172077 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, 20.660877, 2.9578805, 5.167404)
 
 [node name="Cube" type="MeshInstance3D" parent="city/differentshop2" unique_id=652080760]
@@ -1928,7 +1928,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop2" type="RigidBody3D" parent="city" unique_id=312016882]
+[node name="shop2" type="RigidBody3D" parent="city" unique_id=312016882 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 20.540894, 2.9960332, 9.976915)
 
 [node name="Cube" type="MeshInstance3D" parent="city/shop2" unique_id=1032567491]
@@ -1946,7 +1946,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore2" type="RigidBody3D" parent="city" unique_id=1489481949]
+[node name="uhhidkanytmore2" type="RigidBody3D" parent="city" unique_id=1489481949 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 20.62236, 2.969675, 14.545708)
 
 [node name="Cube" type="MeshInstance3D" parent="city/uhhidkanytmore2" unique_id=396513287]
@@ -1964,7 +1964,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="building3" type="RigidBody3D" parent="city" unique_id=1570907824]
+[node name="building3" type="RigidBody3D" parent="city" unique_id=1570907824 groups=["house"]]
 transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, -50.954132, 5.3306737, -19.990763)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="city/building3" unique_id=1871669553]
@@ -2031,7 +2031,7 @@ mesh = SubResource("ArrayMesh_t0qxv")
 transform = Transform3D(22.559965, 0, 0, 0, 1, 0, 0, 0, 20, 0, -37.90677, 0)
 mesh = SubResource("ArrayMesh_mnt67")
 
-[node name="building4" type="RigidBody3D" parent="city" unique_id=1278581885]
+[node name="building4" type="RigidBody3D" parent="city" unique_id=1278581885 groups=["house"]]
 transform = Transform3D(0.1442948, 0, 0, 0, 0.1442948, 0, 0, 0, 0.1442948, -50.954132, 5.188497, 21.588316)
 
 [node name="Cube" type="MeshInstance3D" parent="city/building4" unique_id=702525885]
@@ -2098,7 +2098,7 @@ mesh = SubResource("ArrayMesh_mnt67")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24705505, 23.041828, 0.09321594)
 shape = SubResource("BoxShape3D_txqlw")
 
-[node name="differentshop3" type="RigidBody3D" parent="city" unique_id=946226945]
+[node name="differentshop3" type="RigidBody3D" parent="city" unique_id=946226945 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, -51.143276, 2.9578805, -12.721041)
 
 [node name="Cube" type="MeshInstance3D" parent="city/differentshop3" unique_id=997903410]
@@ -2116,7 +2116,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop3" type="RigidBody3D" parent="city" unique_id=1234077459]
+[node name="shop3" type="RigidBody3D" parent="city" unique_id=1234077459 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -51.26326, 2.9960332, -7.9115295)
 
 [node name="Cube" type="MeshInstance3D" parent="city/shop3" unique_id=2025352477]
@@ -2134,7 +2134,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore3" type="RigidBody3D" parent="city" unique_id=140414783]
+[node name="uhhidkanytmore3" type="RigidBody3D" parent="city" unique_id=140414783 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -51.181793, 2.969675, -3.3427372)
 
 [node name="Cube" type="MeshInstance3D" parent="city/uhhidkanytmore3" unique_id=692364291]
@@ -2152,7 +2152,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="differentshop4" type="RigidBody3D" parent="city" unique_id=120644511]
+[node name="differentshop4" type="RigidBody3D" parent="city" unique_id=120644511 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, -51.143276, 2.9578805, 5.167404)
 
 [node name="Cube" type="MeshInstance3D" parent="city/differentshop4" unique_id=1144749041]
@@ -2170,7 +2170,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop4" type="RigidBody3D" parent="city" unique_id=270227636]
+[node name="shop4" type="RigidBody3D" parent="city" unique_id=270227636 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -51.26326, 2.9960332, 9.976915)
 
 [node name="Cube" type="MeshInstance3D" parent="city/shop4" unique_id=1557158115]
@@ -2188,7 +2188,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore4" type="RigidBody3D" parent="city" unique_id=548292115]
+[node name="uhhidkanytmore4" type="RigidBody3D" parent="city" unique_id=548292115 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -51.181793, 2.969675, 14.545708)
 
 [node name="Cube" type="MeshInstance3D" parent="city/uhhidkanytmore4" unique_id=1500245280]
@@ -2208,7 +2208,7 @@ shape = SubResource("BoxShape3D_cena2")
 
 [node name="city 2" type="Node3D" parent="." unique_id=522893674]
 
-[node name="differentshop" type="RigidBody3D" parent="city 2" unique_id=1305174035]
+[node name="differentshop" type="RigidBody3D" parent="city 2" unique_id=1305174035 groups=["house"]]
 transform = Transform3D(-0.5265659, 0, -4.6033854e-08, 0, 0.5265659, 0, 4.6033854e-08, 0, -0.5265659, 9.052658, 2.9578805, -3.262498)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/differentshop" unique_id=1329961609]
@@ -2226,7 +2226,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop" type="RigidBody3D" parent="city 2" unique_id=237471504]
+[node name="shop" type="RigidBody3D" parent="city 2" unique_id=237471504 groups=["house"]]
 transform = Transform3D(-0.52, 0, -4.5459842e-08, 0, 0.52, 0, 4.5459842e-08, 0, -0.52, 9.172642, 2.9960332, -8.072009)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/shop" unique_id=1330233744]
@@ -2244,7 +2244,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore" type="RigidBody3D" parent="city 2" unique_id=1951996809]
+[node name="uhhidkanytmore" type="RigidBody3D" parent="city 2" unique_id=1951996809 groups=["house"]]
 transform = Transform3D(-0.52, 0, -4.5459842e-08, 0, 0.52, 0, 4.5459842e-08, 0, -0.52, 9.091175, 2.969675, -12.640801)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore" unique_id=1570590366]
@@ -2262,7 +2262,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="differentshop2" type="RigidBody3D" parent="city 2" unique_id=1053186331]
+[node name="differentshop2" type="RigidBody3D" parent="city 2" unique_id=1053186331 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, -2.4058456, 2.9578805, -12.721041)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/differentshop2" unique_id=1955035280]
@@ -2280,7 +2280,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop2" type="RigidBody3D" parent="city 2" unique_id=1003608461]
+[node name="shop2" type="RigidBody3D" parent="city 2" unique_id=1003608461 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -2.5258293, 2.9960332, -7.9115295)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/shop2" unique_id=657283439]
@@ -2298,7 +2298,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore2" type="RigidBody3D" parent="city 2" unique_id=476160335]
+[node name="uhhidkanytmore2" type="RigidBody3D" parent="city 2" unique_id=476160335 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -2.4443626, 2.969675, -3.3427372)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore2" unique_id=836570536]
@@ -2316,7 +2316,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="differentshop3" type="RigidBody3D" parent="city 2" unique_id=968656896]
+[node name="differentshop3" type="RigidBody3D" parent="city 2" unique_id=968656896 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, -13.340469, 2.9578805, -12.721041)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/differentshop3" unique_id=965401548]
@@ -2334,7 +2334,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop3" type="RigidBody3D" parent="city 2" unique_id=1376093585]
+[node name="shop3" type="RigidBody3D" parent="city 2" unique_id=1376093585 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -13.460453, 2.9960332, -7.9115295)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/shop3" unique_id=1078825532]
@@ -2352,7 +2352,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore3" type="RigidBody3D" parent="city 2" unique_id=278648257]
+[node name="uhhidkanytmore3" type="RigidBody3D" parent="city 2" unique_id=278648257 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -13.378986, 2.969675, -3.3427372)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore3" unique_id=1010501078]
@@ -2370,7 +2370,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="building" type="RigidBody3D" parent="city 2" unique_id=774586684]
+[node name="building" type="RigidBody3D" parent="city 2" unique_id=774586684 groups=["house"]]
 transform = Transform3D(-0.14429481, 0, -1.2614653e-08, 0, 0.14429481, 0, 1.2614653e-08, 0, -0.14429481, -1.8568649, 5.155071, 25.434855)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/building" unique_id=1384525533]
@@ -2437,7 +2437,7 @@ mesh = SubResource("ArrayMesh_t0qxv")
 transform = Transform3D(22.559965, 0, 0, 0, 1, 0, 0, 0, 20, 0, -37.90677, 0)
 mesh = SubResource("ArrayMesh_mnt67")
 
-[node name="differentshop4" type="RigidBody3D" parent="city 2" unique_id=910205749]
+[node name="differentshop4" type="RigidBody3D" parent="city 2" unique_id=910205749 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, 8.853092, 2.9578805, 6.716213)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/differentshop4" unique_id=806708763]
@@ -2455,7 +2455,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop4" type="RigidBody3D" parent="city 2" unique_id=81824616]
+[node name="shop4" type="RigidBody3D" parent="city 2" unique_id=81824616 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 8.7331085, 2.9960332, 11.525724)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/shop4" unique_id=774051344]
@@ -2473,7 +2473,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore4" type="RigidBody3D" parent="city 2" unique_id=429772135]
+[node name="uhhidkanytmore4" type="RigidBody3D" parent="city 2" unique_id=429772135 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 8.814575, 2.969675, 16.094517)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore4" unique_id=1669201972]
@@ -2491,7 +2491,7 @@ mesh = SubResource("ArrayMesh_oaska")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="differentshop5" type="RigidBody3D" parent="city 2" unique_id=775127923]
+[node name="differentshop5" type="RigidBody3D" parent="city 2" unique_id=775127923 groups=["house"]]
 transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, -3.7649574, 2.9578805, 6.716213)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/differentshop5" unique_id=1741709245]
@@ -2509,7 +2509,7 @@ mesh = SubResource("ArrayMesh_yo6wd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="shop5" type="RigidBody3D" parent="city 2" unique_id=51311049]
+[node name="shop5" type="RigidBody3D" parent="city 2" unique_id=51311049 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -3.884941, 2.9960332, 11.525724)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/shop5" unique_id=1395022423]
@@ -2527,7 +2527,7 @@ mesh = SubResource("ArrayMesh_crmcc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
-[node name="uhhidkanytmore5" type="RigidBody3D" parent="city 2" unique_id=1511952705]
+[node name="uhhidkanytmore5" type="RigidBody3D" parent="city 2" unique_id=1511952705 groups=["house"]]
 transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -3.8034744, 2.969675, 16.094517)
 
 [node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore5" unique_id=1723268305]
@@ -2548,7 +2548,7 @@ shape = SubResource("BoxShape3D_cena2")
 [node name="test" type="Node3D" parent="." unique_id=1491775224]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.393688, 0, 9.369347)
 
-[node name="brick-wall9" type="Node3D" parent="test" unique_id=765951134]
+[node name="brick-wall9" type="Node3D" parent="test" unique_id=765951134 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 0.32372308, 5.093775)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall9" unique_id=548387806]
@@ -2810,7 +2810,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall10" type="Node3D" parent="test" unique_id=892287677]
+[node name="brick-wall10" type="Node3D" parent="test" unique_id=892287677 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 2.2463732, 5.074093)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall10" unique_id=985031234]
@@ -3072,7 +3072,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall11" type="Node3D" parent="test" unique_id=1234536251]
+[node name="brick-wall11" type="Node3D" parent="test" unique_id=1234536251 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 0.32372308, 8.997397)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall11" unique_id=747095636]
@@ -3334,7 +3334,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall12" type="Node3D" parent="test" unique_id=282335629]
+[node name="brick-wall12" type="Node3D" parent="test" unique_id=282335629 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 2.2463732, 8.9777155)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall12" unique_id=868924401]
@@ -3596,7 +3596,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall13" type="Node3D" parent="test" unique_id=198430258]
+[node name="brick-wall13" type="Node3D" parent="test" unique_id=198430258 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 0.32372308, -2.7902875)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall13" unique_id=765690803]
@@ -3858,7 +3858,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall14" type="Node3D" parent="test" unique_id=768879066]
+[node name="brick-wall14" type="Node3D" parent="test" unique_id=768879066 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 2.2463732, -2.809969)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall14" unique_id=313249160]
@@ -4120,7 +4120,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall15" type="Node3D" parent="test" unique_id=1847854892]
+[node name="brick-wall15" type="Node3D" parent="test" unique_id=1847854892 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 0.32372308, 1.1133356)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall15" unique_id=804781819]
@@ -4382,7 +4382,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall16" type="Node3D" parent="test" unique_id=1758330714]
+[node name="brick-wall16" type="Node3D" parent="test" unique_id=1758330714 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.833334, 2.2463732, 1.0936537)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall16" unique_id=1669301528]
@@ -4644,7 +4644,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall17" type="Node3D" parent="test" unique_id=228954517]
+[node name="brick-wall17" type="Node3D" parent="test" unique_id=228954517 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -28.970959, 0.32372308, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall17" unique_id=2104404073]
@@ -4906,7 +4906,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall18" type="Node3D" parent="test" unique_id=1873011073]
+[node name="brick-wall18" type="Node3D" parent="test" unique_id=1873011073 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -28.951275, 2.2463732, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall18" unique_id=676746090]
@@ -5168,7 +5168,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall19" type="Node3D" parent="test" unique_id=1101125673]
+[node name="brick-wall19" type="Node3D" parent="test" unique_id=1101125673 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -32.87458, 0.32372308, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall19" unique_id=215619885]
@@ -5430,7 +5430,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall20" type="Node3D" parent="test" unique_id=469982898]
+[node name="brick-wall20" type="Node3D" parent="test" unique_id=469982898 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -32.854897, 2.2463732, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall20" unique_id=1686967725]
@@ -5692,7 +5692,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall21" type="Node3D" parent="test" unique_id=1938710581]
+[node name="brick-wall21" type="Node3D" parent="test" unique_id=1938710581 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -21.086895, 0.32372308, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall21" unique_id=1402706774]
@@ -5954,7 +5954,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall22" type="Node3D" parent="test" unique_id=7040524]
+[node name="brick-wall22" type="Node3D" parent="test" unique_id=7040524 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -21.067213, 2.2463732, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall22" unique_id=280678054]
@@ -6216,7 +6216,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall23" type="Node3D" parent="test" unique_id=1031407030]
+[node name="brick-wall23" type="Node3D" parent="test" unique_id=1031407030 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -24.990517, 0.32372308, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall23" unique_id=312239162]
@@ -6478,7 +6478,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall24" type="Node3D" parent="test" unique_id=2074782018]
+[node name="brick-wall24" type="Node3D" parent="test" unique_id=2074782018 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, -0.3162125, 0, 0.3162125, 0, 0.3162125, 0, -1.38220875e-08, -24.970837, 2.2463732, -7.515935)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall24" unique_id=570006780]
@@ -6740,7 +6740,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall25" type="Node3D" parent="test" unique_id=79329958]
+[node name="brick-wall25" type="Node3D" parent="test" unique_id=79329958 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -23.124275, 0.32372308, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall25" unique_id=1126020934]
@@ -7002,7 +7002,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall26" type="Node3D" parent="test" unique_id=121982266]
+[node name="brick-wall26" type="Node3D" parent="test" unique_id=121982266 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -23.143957, 2.2463732, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall26" unique_id=1127236312]
@@ -7264,7 +7264,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall27" type="Node3D" parent="test" unique_id=458447669]
+[node name="brick-wall27" type="Node3D" parent="test" unique_id=458447669 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -19.220652, 0.32372308, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall27" unique_id=946772468]
@@ -7526,7 +7526,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall28" type="Node3D" parent="test" unique_id=306811532]
+[node name="brick-wall28" type="Node3D" parent="test" unique_id=306811532 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -19.240335, 2.2463732, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall28" unique_id=1088048068]
@@ -7788,7 +7788,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall29" type="Node3D" parent="test" unique_id=1853735851]
+[node name="brick-wall29" type="Node3D" parent="test" unique_id=1853735851 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -31.008335, 0.32372308, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall29" unique_id=319775972]
@@ -8050,7 +8050,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall30" type="Node3D" parent="test" unique_id=905050614]
+[node name="brick-wall30" type="Node3D" parent="test" unique_id=905050614 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -31.028019, 2.2463732, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall30" unique_id=1171659710]
@@ -8312,7 +8312,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall31" type="Node3D" parent="test" unique_id=184295419]
+[node name="brick-wall31" type="Node3D" parent="test" unique_id=184295419 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -27.104715, 0.32372308, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall31" unique_id=2056574037]
@@ -8574,7 +8574,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall32" type="Node3D" parent="test" unique_id=1290532578]
+[node name="brick-wall32" type="Node3D" parent="test" unique_id=1290532578 groups=["house"]]
 transform = Transform3D(-1.38220875e-08, 0, 0.3162125, 0, 0.3162125, 0, -0.3162125, 0, -1.38220875e-08, -27.124395, 2.2463732, 10.754932)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test/brick-wall32" unique_id=1973210112]
@@ -8839,7 +8839,7 @@ shape = SubResource("ConvexPolygonShape3D_8u370")
 [node name="test2" type="Node3D" parent="." unique_id=51497623]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.528002, 0, 9.369347)
 
-[node name="brick-wall" type="Node3D" parent="test2" unique_id=1877807304]
+[node name="brick-wall" type="Node3D" parent="test2" unique_id=1877807304 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 0.32372308, 5.093775)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall" unique_id=376605243]
@@ -9101,7 +9101,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall2" type="Node3D" parent="test2" unique_id=1085738058]
+[node name="brick-wall2" type="Node3D" parent="test2" unique_id=1085738058 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 2.2463732, 5.074093)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall2" unique_id=1704409201]
@@ -9363,7 +9363,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall3" type="Node3D" parent="test2" unique_id=140085748]
+[node name="brick-wall3" type="Node3D" parent="test2" unique_id=140085748 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 0.32372308, 8.997397)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall3" unique_id=841145549]
@@ -9625,7 +9625,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall4" type="Node3D" parent="test2" unique_id=972150242]
+[node name="brick-wall4" type="Node3D" parent="test2" unique_id=972150242 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 2.2463732, 8.9777155)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall4" unique_id=838375334]
@@ -9887,7 +9887,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall5" type="Node3D" parent="test2" unique_id=111776624]
+[node name="brick-wall5" type="Node3D" parent="test2" unique_id=111776624 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 0.32372308, -2.7902875)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall5" unique_id=1348056795]
@@ -10149,7 +10149,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall6" type="Node3D" parent="test2" unique_id=1658069036]
+[node name="brick-wall6" type="Node3D" parent="test2" unique_id=1658069036 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 2.2463732, -2.809969)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall6" unique_id=648121900]
@@ -10411,7 +10411,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall7" type="Node3D" parent="test2" unique_id=1018315624]
+[node name="brick-wall7" type="Node3D" parent="test2" unique_id=1018315624 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 0.32372308, 1.1133356)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall7" unique_id=1016453995]
@@ -10673,7 +10673,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rwgxs")
 transform = Transform3D(0.5805413, 0, 0, 0, 0.661475, 0, 0, 0, 1.2467116, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_8u370")
 
-[node name="brick-wall8" type="Node3D" parent="test2" unique_id=2072787769]
+[node name="brick-wall8" type="Node3D" parent="test2" unique_id=2072787769 groups=["house"]]
 transform = Transform3D(0.3162125, 0, 0, 0, 0.3162125, 0, 0, 0, 0.3162125, -13.405167, 2.2463732, 1.0936537)
 
 [node name="RigidBody3D17" type="RigidBody3D" parent="test2/brick-wall8" unique_id=1769232811]
@@ -11013,6 +11013,6 @@ script = ExtResource("7_i7141")
 [node name="ragdoll-thing" parent="Path3D2/PathFollow3D" unique_id=129806134 instance=ExtResource("5_71j4m")]
 transform = Transform3D(-0.32353097, 0, -4.885182e-08, 0, 0.32353097, 0, 4.885182e-08, 0, -0.32353097, -0.19611692, -0.023809195, 0.025980711)
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2030803203]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2030803203 groups=["house"]]
 stream = ExtResource("8_4mrxx")
 autoplay = true

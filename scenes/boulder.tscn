@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d1nxr8rgpx7kj" path="res://scenes/boulder.gd" id="1_7lox5"]
 [ext_resource type="Texture2D" uid="uid://colopvcqrm0a6" path="res://models/boulder_normal grey.png" id="1_475t6"]
+[ext_resource type="AudioStream" uid="uid://3ew3qh7gjm8k" path="res://other-assets/smack-sound-effect.ogg" id="3_wye2t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwjh3"]
 resource_name = "Material.001"
@@ -60,3 +61,8 @@ mesh = SubResource("ArrayMesh_alyj7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=649949745]
 shape = SubResource("SphereShape3D_txqlw")
+
+[node name="smack" type="AudioStreamPlayer3D" parent="." unique_id=72710516]
+stream = ExtResource("3_wye2t")
+volume_db = -7.34
+autoplay = true
