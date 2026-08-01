@@ -48,6 +48,9 @@ shadow_mesh = SubResource("ArrayMesh_y6416")
 radius = 1.0715936
 
 [node name="boulder" type="RigidBody3D" unique_id=1453407944]
+can_sleep = false
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_7lox5")
 
 [node name="boulder" type="Node3D" parent="." unique_id=71433631]
