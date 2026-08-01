@@ -4,6 +4,7 @@ extends CharacterBody3D
 var speed = 5
 var jump = 10
 var dead = false
+var front_view = false
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -12,6 +13,12 @@ func _process(delta):
 	if Input.is_action_just_pressed("reload"):
 		get_tree().reload_current_scene()
 	use_item()
+	if Input.is_action_just_pressed("front_view"):
+		front_view = true
+		%pivot_point.rotation_degrees.y = 180
+	if Input.is_action_just_released("front_view"):
+		front_view = false
+		%pivot_point.rotation_degrees.y = 0
 func _physics_process(delta):
 	var input_direction = Vector3.ZERO
 	if Input.is_action_pressed("forward"):
@@ -45,6 +52,8 @@ func _physics_process(delta):
 		move_and_slide()
 		
 func _unhandled_input(event: InputEvent) -> void:
+	if front_view:
+		return
 	if event is InputEventMouseMotion:
 		rotation_degrees.y -= event.relative.x * 0.3
 		%pivot_point.rotation_degrees.x -= event.relative.y * 0.3
@@ -53,7 +62,6 @@ func use_item():
 	if Input.is_action_just_pressed("shoot"):
 		const boulder = preload("res://scenes/boulder.tscn")
 		var new_boulder = boulder.instantiate()
-		print("muzzle global pos: ", %muzzle.global_position)
 		new_boulder.global_transform = %muzzle.global_transform
 		get_tree().root.add_child(new_boulder)
 		var launch_direction = -%muzzle.global_transform.basis.z
