@@ -1720,6 +1720,12 @@ material = SubResource("StandardMaterial3D_qhqgy")
 [node name="player" parent="." unique_id=1769553434 instance=ExtResource("1_nnsk1")]
 transform = Transform3D(0.50679576, 0, 0, 0, 0.50679576, 0, 0, 0, 0.50679576, 0, 0.3085289, 0)
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="player" unique_id=2030803203 groups=["house"]]
+transform = Transform3D(1.9731816, 0, 0, 0, 1.9731816, 0, 0, 0, 1.9731816, 0, -0.60878354, 0)
+stream = ExtResource("8_4mrxx")
+autoplay = true
+parameters/looping = true
+
 [node name="city" type="Node3D" parent="." unique_id=1209937316]
 
 [node name="building" type="RigidBody3D" parent="city" unique_id=1549988065 groups=["house"]]
@@ -11012,7 +11018,3 @@ script = ExtResource("7_i7141")
 
 [node name="ragdoll-thing" parent="Path3D2/PathFollow3D" unique_id=129806134 instance=ExtResource("5_71j4m")]
 transform = Transform3D(-0.32353097, 0, -4.885182e-08, 0, 0.32353097, 0, 4.885182e-08, 0, -0.32353097, -0.19611692, -0.023809195, 0.025980711)
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2030803203 groups=["house"]]
-stream = ExtResource("8_4mrxx")
-autoplay = true
