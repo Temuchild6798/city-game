@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://ctng1ac1fb1ig"]
 
-[ext_resource type="Script" uid="uid://d1nxr8rgpx7kj" path="res://scenes/boulder.gd" id="1_7lox5"]
+[ext_resource type="Script" uid="uid://d1nxr8rgpx7kj" path="res://scripts/boulder.gd" id="1_7lox5"]
 [ext_resource type="Texture2D" uid="uid://colopvcqrm0a6" path="res://models/boulder_normal grey.png" id="1_475t6"]
 [ext_resource type="AudioStream" uid="uid://3ew3qh7gjm8k" path="res://other-assets/smack-sound-effect.ogg" id="3_wye2t"]
 
