@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-
+#this is a coment hehehe no one will see this
 var speed = 5
 var jump = 10
 var dead = false
@@ -34,7 +34,7 @@ func _physics_process(delta):
 		input_direction = input_direction.normalized()
 	if Input.is_action_pressed("sprint"):
 		speed = 10
-		jump = 30
+		jump = 16
 		%AnimationPlayer.speed_scale = 40
 	else:
 		speed = 4
