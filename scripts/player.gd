@@ -8,7 +8,6 @@ var front_view = false
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
 func _process(delta):
 	if Input.is_action_just_pressed("reload"):
 		get_tree().reload_current_scene()

@@ -12271,162 +12271,162 @@ transform = Transform3D(1, 8.742275e-08, 8.742532e-08, -8.74253e-08, -4.3711392e
 size = Vector3(1, 10.68927, 1)
 material = SubResource("StandardMaterial3D_txqlw")
 
-[node name="ragdoll-thing" type="Node3D" parent="." unique_id=1256060438]
+[node name="ragdoll-thing" type="Node3D" parent="." unique_id=1256060438 groups=["enemy"]]
 transform = Transform3D(1.5872295, 0, 0, 0, 1.5872295, 0, 0, 0, 1.5872295, -28.972155, 8.331452, -36.941643)
 
-[node name="ragdoll" type="Node3D" parent="ragdoll-thing" unique_id=1296227434]
+[node name="ragdoll" type="Node3D" parent="ragdoll-thing" unique_id=1296227434 groups=["enemy"]]
 transform = Transform3D(0.39772084, 0, 0, 0, 0.39772084, 0, 0, 0, 0.39772084, -2.7690716, -1.6454864, 0)
 
-[node name="body" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=361339937]
+[node name="body" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=361339937 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="body" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/body" unique_id=748159815]
+[node name="body" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/body" unique_id=748159815 groups=["enemy"]]
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0)
 mesh = SubResource("ArrayMesh_s7cf6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/body" unique_id=495857429]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/body" unique_id=495857429 groups=["enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2694993, 5.929239, 0.035705503)
 shape = SubResource("BoxShape3D_w7kh3")
 
-[node name="head" type="StaticBody3D" parent="ragdoll-thing/ragdoll" unique_id=318707175]
+[node name="head" type="StaticBody3D" parent="ragdoll-thing/ragdoll" unique_id=318707175 groups=["enemy"]]
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, -4.7683716e-07, 0, 0)
 
-[node name="head" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/head" unique_id=1905204770]
+[node name="head" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/head" unique_id=1905204770 groups=["enemy"]]
 transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 4.7683716e-07, 0, 0)
 mesh = SubResource("ArrayMesh_tp5bs")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/head" unique_id=1578368384]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/head" unique_id=1578368384 groups=["enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.414478, 10.901645, 0)
 shape = SubResource("CapsuleShape3D_cena2")
 
-[node name="neck-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1305649923]
+[node name="neck-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1305649923 groups=["enemy"]]
 transform = Transform3D(0.9999992, 0, 0, 0, 0.9999992, 0, 0, 0, 0.9999992, 6.2709856, 8.97859, -0.30401793)
 node_a = NodePath("../body")
 node_b = NodePath("../head")
 
-[node name="left-arm" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=22352210]
+[node name="left-arm" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=22352210 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="left-arm" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-arm" unique_id=1987579152]
+[node name="left-arm" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-arm" unique_id=1987579152 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_85anj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-arm" unique_id=880266836]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-arm" unique_id=880266836 groups=["enemy"]]
 transform = Transform3D(-4.3710287e-08, 0.99997014, 0, -0.99997014, -4.3710287e-08, 0, 0, 0, 0.99997014, 11.010654, 7.639777, 0)
 shape = SubResource("CapsuleShape3D_u6rex")
 
-[node name="left-shoulder-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=368591031]
+[node name="left-shoulder-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=368591031 groups=["enemy"]]
 transform = Transform3D(0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 8.569857, 7.492362, 0)
 node_a = NodePath("../body")
 node_b = NodePath("../left-arm")
 
-[node name="left-hand" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=1857018990]
+[node name="left-hand" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=1857018990 groups=["enemy"]]
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0)
 
-[node name="left-hand" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-hand" unique_id=1129253128]
+[node name="left-hand" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-hand" unique_id=1129253128 groups=["enemy"]]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
 mesh = SubResource("ArrayMesh_bl06o")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-hand" unique_id=762927222]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-hand" unique_id=762927222 groups=["enemy"]]
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 16.053802, 7.518328, 0)
 shape = SubResource("CapsuleShape3D_k8uo4")
 
-[node name="left-elbow-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=879574587]
+[node name="left-elbow-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=879574587 groups=["enemy"]]
 transform = Transform3D(-4.371137e-08, 0.9999996, 0, -0.9999996, -4.371137e-08, 0, 0, 0, 0.9999996, 13.474744, 7.5183253, 0)
 node_a = NodePath("../left-arm")
 node_b = NodePath("../left-hand")
 
-[node name="right-arm" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=2006069147]
+[node name="right-arm" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=2006069147 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="right-arm" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-arm" unique_id=554063564]
+[node name="right-arm" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-arm" unique_id=554063564 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_3kpox")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-arm" unique_id=1596244361]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-arm" unique_id=1596244361 groups=["enemy"]]
 transform = Transform3D(-4.3711392e-08, 1, 0, -1, -4.3711392e-08, 0, 0, 0, 1, 1.4976916, 7.502331, 0)
 shape = SubResource("CapsuleShape3D_txqlw")
 
-[node name="right-shoulder-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=575686508]
+[node name="right-shoulder-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=575686508 groups=["enemy"]]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999997, 0, 0, 0, 0.9999997, 4.006113, 7.455234, 0)
 node_a = NodePath("../body")
 node_b = NodePath("../right-arm")
 
-[node name="right-hand" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=513272565]
+[node name="right-hand" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=513272565 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="right-hand" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-hand" unique_id=939082907]
+[node name="right-hand" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-hand" unique_id=939082907 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_vfqcy")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-hand" unique_id=219576198]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-hand" unique_id=219576198 groups=["enemy"]]
 transform = Transform3D(-4.371077e-08, -0.99998164, 0, 0.99998164, -4.371077e-08, 0, 0, 0, 0.99998164, -3.4617095, 7.521791, 0)
 shape = SubResource("CapsuleShape3D_c78u3")
 
-[node name="right-elbow-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=369438127]
+[node name="right-elbow-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=369438127 groups=["enemy"]]
 transform = Transform3D(0.99999934, 0, 0, 0, 0.99999934, 0, 0, 0, 0.99999934, -1.0008588, 7.4915333, 0)
 node_a = NodePath("../right-arm")
 node_b = NodePath("../right-hand")
 
-[node name="left-thigh" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=992682169]
+[node name="left-thigh" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=992682169 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="left-thigh" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-thigh" unique_id=1071808870]
+[node name="left-thigh" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-thigh" unique_id=1071808870 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_sqp8r")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-thigh" unique_id=1033279057]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-thigh" unique_id=1033279057 groups=["enemy"]]
 transform = Transform3D(0.99997354, 0, 0, 0, 0.99997354, 0, 0, 0, 0.99997354, 7.6250544, -0.55735993, 0)
 shape = SubResource("CapsuleShape3D_deku5")
 
-[node name="left-hip-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1245683453]
+[node name="left-hip-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1245683453 groups=["enemy"]]
 transform = Transform3D(0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 7.699892, 2.6177516, 0)
 node_a = NodePath("../body")
 node_b = NodePath("../left-thigh")
 
-[node name="left-foot" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=384216164]
+[node name="left-foot" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=384216164 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="left-foot" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-foot" unique_id=1849257876]
+[node name="left-foot" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/left-foot" unique_id=1849257876 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_7hgd4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-foot" unique_id=1147109084]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/left-foot" unique_id=1147109084 groups=["enemy"]]
 transform = Transform3D(0.99997973, 0, 0, 0, 0.99997973, 0, 0, 0, 0.99997973, 7.7141385, -6.1051974, 0)
 shape = SubResource("CapsuleShape3D_v53lp")
 
-[node name="left-knee-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=2024689816]
+[node name="left-knee-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=2024689816 groups=["enemy"]]
 transform = Transform3D(0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 7.661791, -3.6876693, 0)
 node_a = NodePath("../left-thigh")
 node_b = NodePath("../left-foot")
 
-[node name="right-thigh" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=691123514]
+[node name="right-thigh" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=691123514 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 
-[node name="right-thigh" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-thigh" unique_id=166058344]
+[node name="right-thigh" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-thigh" unique_id=166058344 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_0qp8g")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-thigh" unique_id=878694092]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-thigh" unique_id=878694092 groups=["enemy"]]
 transform = Transform3D(0.9999667, 0, 0, 0, 0.9999667, 0, 0, 0, 0.9999667, 5.126192, -0.5573598, 0)
 shape = SubResource("CapsuleShape3D_deku5")
 
-[node name="right-hip-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=326279819]
+[node name="right-hip-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=326279819 groups=["enemy"]]
 transform = Transform3D(0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 5.099286, 2.5473938, 0)
 node_a = NodePath("../body")
 node_b = NodePath("../right-thigh")
 
-[node name="right-foot" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=1512250964]
+[node name="right-foot" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=1512250964 groups=["enemy"]]
 
-[node name="right-foot" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-foot" unique_id=62927782]
+[node name="right-foot" type="MeshInstance3D" parent="ragdoll-thing/ragdoll/right-foot" unique_id=62927782 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_p2bjm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-foot" unique_id=369791262]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll-thing/ragdoll/right-foot" unique_id=369791262 groups=["enemy"]]
 transform = Transform3D(0.9999795, 0, 0, 0, 0.9999795, 0, 0, 0, 0.9999795, 5.1415224, -6.1051965, 0)
 shape = SubResource("CapsuleShape3D_v53lp")
 
-[node name="right-knee-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1527223884]
+[node name="right-knee-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1527223884 groups=["enemy"]]
 transform = Transform3D(0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 5.142597, -3.6736891, 0)
 node_a = NodePath("../right-thigh")
 node_b = NodePath("../right-foot")
