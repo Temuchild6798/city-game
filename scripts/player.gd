@@ -19,6 +19,7 @@ func _process(delta):
 	if Input.is_action_just_released("front_view"):
 		front_view = false
 		%pivot_point.rotation_degrees.y = 0
+	%muzzle.rotation_degrees.x = %pivot_point.rotation_degrees.x + 15
 func _physics_process(delta):
 	var input_direction = Vector3.ZERO
 	if Input.is_action_pressed("forward"):
@@ -33,9 +34,11 @@ func _physics_process(delta):
 		input_direction = input_direction.normalized()
 	if Input.is_action_pressed("sprint"):
 		speed = 10
+		jump = 30
 		%AnimationPlayer.speed_scale = 40
 	else:
 		speed = 4
+		jump = 10
 		%AnimationPlayer.speed_scale = 9
 	if not is_on_floor():
 		velocity.y -= 9.8 * 3 * delta 
@@ -43,7 +46,7 @@ func _physics_process(delta):
 	velocity.z = input_direction.z * speed
 	if is_on_floor():
 		if Input.is_action_pressed("jump"):
-			velocity.y = 10
+			velocity.y = jump
 	if input_direction.length() > 0:
 		%AnimationPlayer.play("move")
 	else:

@@ -1777,6 +1777,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kvtvh")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4mrxx"]
+points = PackedVector3Array(-1.015873, -1.0158731, -1.0158731, 1.015842, 1.0158731, 1.0158731, 1.015842, 1.0158731, -1.0158731, 0.9999691, -1, 1, -1.015873, -0.9522318, 1.0158731, 0.9999691, -1, -1, 0.95220166, 1.0158731, -1.0158731, -1.015873, -1.0158731, 1.0158731, 0.95220166, 1.0158731, 1.0158731, -1.015873, -0.9522318, -1.0158731)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xlx1x"]
 resource_name = "Material.003"
 cull_mode = 2
@@ -1815,6 +1818,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kw7l6")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_w7kh3"]
+points = PackedVector3Array(-1.015873, -1.0158731, -1.0158731, 1.015842, 1.0158731, 1.0158731, 1.015842, 1.0158731, -1.0158731, 0.9999691, -1, 1, -1.015873, -0.9522318, 1.0158731, 0.9999691, -1, -1, 0.95220166, 1.0158731, -1.0158731, -1.015873, -1.0158731, 1.0158731, 0.95220166, 1.0158731, 1.0158731, -1.015873, -0.9522318, -1.0158731)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldw6p"]
 resource_name = "Material.002"
 cull_mode = 2
@@ -1852,6 +1858,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hyrn1")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q5onr"]
+points = PackedVector3Array(-1.015873, -1.0158731, -1.0158731, 1.015842, 1.0158731, 1.0158731, 1.015842, 1.0158731, -1.0158731, 0.9999691, -1, 1, -1.015873, -0.9522318, 1.0158731, 0.9999691, -1, -1, 0.95220166, 1.0158731, -1.0158731, -1.015873, -1.0158731, 1.0158731, 0.95220166, 1.0158731, 1.0158731, -1.015873, -0.9522318, -1.0158731)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k8uo4"]
 size = Vector3(22.597443, 1.824707, 18.555847)
@@ -1935,6 +1944,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jhx03")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o8fc1"]
+points = PackedVector3Array(-1.015873, -1.0158731, -1.0158731, 1.015842, 1.0158731, 1.0158731, 1.015842, 1.0158731, -1.0158731, 0.9999691, -1, 1, -1.015873, -0.9522318, 1.0158731, 0.9999691, -1, -1, 0.95220166, 1.0158731, -1.0158731, -1.015873, -1.0158731, 1.0158731, 0.95220166, 1.0158731, 1.0158731, -1.015873, -0.9522318, -1.0158731)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dss4m"]
 resource_name = "Material.002"
 cull_mode = 2
@@ -1972,6 +1984,12 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7t5mc")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dss4m"]
+points = PackedVector3Array(-1.015873, -1.0158731, -1.0158731, 1.015842, 1.0158731, 1.0158731, 1.015842, 1.0158731, -1.0158731, 0.9999691, -1, 1, -1.015873, -0.9522318, 1.0158731, 0.9999691, -1, -1, 0.95220166, 1.0158731, -1.0158731, -1.015873, -1.0158731, 1.0158731, 0.95220166, 1.0158731, 1.0158731, -1.015873, -0.9522318, -1.0158731)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lakw3"]
+points = PackedVector3Array(-1.015873, -1.0158731, -1.0158731, 1.015842, 1.0158731, 1.0158731, 1.015842, 1.0158731, -1.0158731, 0.9999691, -1, 1, -1.015873, -0.9522318, 1.0158731, 0.9999691, -1, -1, 0.95220166, 1.0158731, -1.0158731, -1.015873, -1.0158731, 1.0158731, 0.95220166, 1.0158731, 1.0158731, -1.015873, -0.9522318, -1.0158731)
 
 [node name="world" type="Node3D" unique_id=2058826348]
 
@@ -2820,6 +2838,186 @@ mesh = SubResource("ArrayMesh_4fbqd")
 mesh = SubResource("ArrayMesh_oaska")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/uhhidkanytmore5" unique_id=1868676413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="differentshop6" type="RigidBody3D" parent="city 2" unique_id=1601910843 groups=["house"]]
+transform = Transform3D(0.5265659, 0, 0, 0, 0.5265659, 0, 0, 0, 0.5265659, -13.340469, 2.9578805, 6.637556)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/differentshop6" unique_id=860942914]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_v2x87")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/differentshop6" unique_id=1708826597]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_xu3te")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/differentshop6" unique_id=1682123790]
+mesh = SubResource("ArrayMesh_yo6wd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/differentshop6" unique_id=177811782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="shop6" type="RigidBody3D" parent="city 2" unique_id=1300211630 groups=["house"]]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -13.460453, 2.9960332, 11.447067)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/shop6" unique_id=373025786]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_orcfk")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/shop6" unique_id=1290920811]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_bw0sp")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/shop6" unique_id=1427181609]
+mesh = SubResource("ArrayMesh_crmcc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/shop6" unique_id=719927626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="uhhidkanytmore6" type="RigidBody3D" parent="city 2" unique_id=1940516207 groups=["house"]]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, -13.378986, 2.969675, 16.01586)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore6" unique_id=884871975]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_akmrv")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/uhhidkanytmore6" unique_id=176108882]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_4fbqd")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/uhhidkanytmore6" unique_id=1580354700]
+mesh = SubResource("ArrayMesh_oaska")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/uhhidkanytmore6" unique_id=162079828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="differentshop7" type="RigidBody3D" parent="city 2" unique_id=263033410 groups=["house"]]
+transform = Transform3D(-2.3016927e-08, 0, -0.5265659, 0, 0.5265659, 0, 0.5265659, 0, -2.3016927e-08, -25.906143, 2.9578805, -5.766838)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/differentshop7" unique_id=70742759]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_v2x87")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/differentshop7" unique_id=380659412]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_xu3te")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/differentshop7" unique_id=708963069]
+mesh = SubResource("ArrayMesh_yo6wd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/differentshop7" unique_id=1172720414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="shop7" type="RigidBody3D" parent="city 2" unique_id=1428879952 groups=["house"]]
+transform = Transform3D(-2.2729921e-08, 0, -0.52, 0, 0.52, 0, 0.52, 0, -2.2729921e-08, -30.715654, 2.9960332, -5.8868217)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/shop7" unique_id=680597043]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_orcfk")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/shop7" unique_id=1382871393]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_bw0sp")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/shop7" unique_id=1344273200]
+mesh = SubResource("ArrayMesh_crmcc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/shop7" unique_id=561935248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="uhhidkanytmore7" type="RigidBody3D" parent="city 2" unique_id=164608483 groups=["house"]]
+transform = Transform3D(-2.2729921e-08, 0, -0.52, 0, 0.52, 0, 0.52, 0, -2.2729921e-08, -35.284447, 2.969675, -5.805355)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore7" unique_id=724377633]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_akmrv")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/uhhidkanytmore7" unique_id=181423178]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_4fbqd")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/uhhidkanytmore7" unique_id=1675706179]
+mesh = SubResource("ArrayMesh_oaska")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/uhhidkanytmore7" unique_id=358523390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="differentshop8" type="RigidBody3D" parent="city 2" unique_id=1524531014 groups=["house"]]
+transform = Transform3D(-2.3016927e-08, 0, -0.5265659, 0, 0.5265659, 0, 0.5265659, 0, -2.3016927e-08, -40.28807, 2.9578805, -5.766838)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/differentshop8" unique_id=713183822]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_v2x87")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/differentshop8" unique_id=1012304114]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_xu3te")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/differentshop8" unique_id=1298437361]
+mesh = SubResource("ArrayMesh_yo6wd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/differentshop8" unique_id=375872359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="differentshop9" type="RigidBody3D" parent="city 2" unique_id=378212303 groups=["house"]]
+transform = Transform3D(-2.3016927e-08, 0, 0.5265659, 0, 0.5265659, 0, -0.5265659, 0, -2.3016927e-08, -35.522263, 2.9578805, 24.35481)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/differentshop9" unique_id=2022613349]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_v2x87")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/differentshop9" unique_id=563220620]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_xu3te")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/differentshop9" unique_id=339236559]
+mesh = SubResource("ArrayMesh_yo6wd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/differentshop9" unique_id=1083041710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="shop8" type="RigidBody3D" parent="city 2" unique_id=1783809313 groups=["house"]]
+transform = Transform3D(-2.2729921e-08, 0, 0.52, 0, 0.52, 0, -0.52, 0, -2.2729921e-08, -30.712751, 2.9960332, 24.474794)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/shop8" unique_id=1301901400]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_orcfk")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/shop8" unique_id=1454301026]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_bw0sp")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/shop8" unique_id=1048043450]
+mesh = SubResource("ArrayMesh_crmcc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/shop8" unique_id=851417024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
+shape = SubResource("BoxShape3D_cena2")
+
+[node name="uhhidkanytmore8" type="RigidBody3D" parent="city 2" unique_id=397264779 groups=["house"]]
+transform = Transform3D(-2.2729921e-08, 0, 0.52, 0, 0.52, 0, -0.52, 0, -2.2729921e-08, -26.14396, 2.969675, 24.393328)
+
+[node name="Cube" type="MeshInstance3D" parent="city 2/uhhidkanytmore8" unique_id=632604759]
+transform = Transform3D(3.5810032, 0, 0, 0, 6.846734, 0, 0, 0, 3.5201461, 0, 0, 0.006360613)
+mesh = SubResource("ArrayMesh_akmrv")
+
+[node name="Cube_001" type="MeshInstance3D" parent="city 2/uhhidkanytmore8" unique_id=1065702504]
+transform = Transform3D(5.025864, 0, 0, 0, 5.025864, 0, 0, 0, 5.025864, 0, 11.041467, 0)
+mesh = SubResource("ArrayMesh_4fbqd")
+
+[node name="Cube_002" type="MeshInstance3D" parent="city 2/uhhidkanytmore8" unique_id=1833351206]
+mesh = SubResource("ArrayMesh_oaska")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="city 2/uhhidkanytmore8" unique_id=1554227499]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057800554, 0.5290146, -0.052734368)
 shape = SubResource("BoxShape3D_cena2")
 
@@ -11257,6 +11455,18 @@ transform = Transform3D(-1.8703759e-08, 0, -1.2751572, -3.740751e-08, -0.2924609
 [node name="road12" parent="roads" unique_id=122607172 instance=ExtResource("2_4wyf3")]
 transform = Transform3D(-1.6504051e-08, 0, -0.29246098, 0, 0.292461, 0, 0.3775687, 0, -1.2783876e-08, -18.695124, -0.27567005, -7.796469)
 
+[node name="road13" parent="roads" unique_id=1551049010 instance=ExtResource("2_4wyf3")]
+transform = Transform3D(-0.3775687, 0, 2.5567752e-08, 0, 0.29246098, 0, -3.3008103e-08, 0, -0.29246098, -29.486881, -0.27567005, -12.923055)
+
+[node name="road14" parent="roads" unique_id=2070444350 instance=ExtResource("2_4wyf3")]
+transform = Transform3D(-1.6504051e-08, 0, -0.29246098, 0, 0.292461, 0, 0.3775687, 0, -1.2783876e-08, -46.51409, -0.27567005, -6.8824377)
+
+[node name="road15" parent="roads" unique_id=1972904284 instance=ExtResource("2_4wyf3")]
+transform = Transform3D(-0.17474325, 0, 2.5567752e-08, 0, 0.29246098, 0, -1.5276541e-08, 0, -0.29246098, -41.185204, -0.27567005, -12.923055)
+
+[node name="road16" parent="roads" unique_id=1907515956 instance=ExtResource("2_4wyf3")]
+transform = Transform3D(-1.6504051e-08, 0, -0.29246098, 0, 0.292461, 0, 0.3775687, 0, -1.2783876e-08, -46.51409, -0.27567005, 9.433192)
+
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=643798284]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.227545, -0.35986328, -39.683228)
 use_collision = true
@@ -11304,13 +11514,25 @@ mesh = SubResource("ArrayMesh_2pdeu")
 transform = Transform3D(1.1608144, 0, 0, 0, 2.7597756, 0, 0, 0, 9.6235485, 11.149341, 2.73037, 0.61189294)
 mesh = SubResource("ArrayMesh_3f3m3")
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="borders/arena" unique_id=505264532]
+transform = Transform3D(1.1608144, 0, 0, 0, 2.7597756, 0, 0, 0, 9.6235485, 11.149341, 2.73037, 0.61189294)
+shape = SubResource("ConvexPolygonShape3D_4mrxx")
+
 [node name="Cube_002" type="MeshInstance3D" parent="borders/arena" unique_id=2084966327]
 transform = Transform3D(-1.1608144, 0, -8.4131733e-07, 0, 2.7597756, 0, 1.0148162e-07, 0, -9.6235485, -11.140441, 2.73037, 0.61189294)
 mesh = SubResource("ArrayMesh_oqppw")
 
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="borders/arena" unique_id=2020596785]
+transform = Transform3D(-1.1608144, 0, -8.4131733e-07, 0, 2.7597756, 0, 1.0148162e-07, 0, -9.6235485, -11.140441, 2.73037, 0.61189294)
+shape = SubResource("ConvexPolygonShape3D_w7kh3")
+
 [node name="Cube_003" type="MeshInstance3D" parent="borders/arena" unique_id=1644111107]
 transform = Transform3D(0, 0, -12.31665, 0, 2.7597756, 0, 0.90699613, 0, 0, 0.020143658, 2.73037, 9.358065)
 mesh = SubResource("ArrayMesh_vcoid")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="borders/arena" unique_id=1265402880]
+transform = Transform3D(0, 0, -12.31665, 0, 2.7597756, 0, 0.90699613, 0, 0, 0.020143658, 2.73037, 9.358065)
+shape = SubResource("ConvexPolygonShape3D_q5onr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="borders/arena" unique_id=894798099]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94752693, -0.76000977, -0.3136902)
@@ -11331,10 +11553,22 @@ mesh = SubResource("ArrayMesh_e3hyu")
 transform = Transform3D(1.1608144, 0, 0, 0, 2.7597756, 0, 0, 0, 9.6235485, 11.149341, 2.73037, 0.61189294)
 mesh = SubResource("ArrayMesh_xo05s")
 
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="borders/arena2" unique_id=399067664]
+transform = Transform3D(1.1608144, 0, 0, 0, 2.7597756, 0, 0, 0, 9.6235485, 11.149341, 2.73037, 0.61189294)
+shape = SubResource("ConvexPolygonShape3D_o8fc1")
+
 [node name="Cube_003" type="MeshInstance3D" parent="borders/arena2" unique_id=1495419117]
 transform = Transform3D(0, 0, -12.31665, 0, 2.7597756, 0, 0.90699613, 0, 0, 0.020143658, 2.73037, 9.358065)
 mesh = SubResource("ArrayMesh_pm21f")
 
-[node name="Cube_001" type="MeshInstance3D" parent="borders" unique_id=632057955]
-transform = Transform3D(-5.0740805e-08, 0, 23.199732, 0, 1.5666528, 0, -1.1608143, 0, -1.0140925e-06, 14.504987, 1.373272, -26.01421)
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="borders/arena2" unique_id=1113726024]
+transform = Transform3D(0, 0, -12.31665, 0, 2.7597756, 0, 0.90699613, 0, 0, 0.020143658, 2.73037, 9.358065)
+shape = SubResource("ConvexPolygonShape3D_dss4m")
+
+[node name="Cube_002" type="MeshInstance3D" parent="borders/arena2" unique_id=632057955]
+transform = Transform3D(0.53727996, 0, 0, 0, 1.5666528, 0, -7.1054274e-15, 0, 23.199732, 11.388634, 1.7263207, -18.617235)
 mesh = SubResource("ArrayMesh_xo05s")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="borders/arena2" unique_id=1464560853]
+transform = Transform3D(0.53727996, 0, 0, 0, 1.5666528, 0, -7.1054274e-15, 0, 23.199732, 11.388634, 1.7263207, -18.617235)
+shape = SubResource("ConvexPolygonShape3D_lakw3")
