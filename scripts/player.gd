@@ -69,7 +69,7 @@ func use_item():
 		var launch_direction = -%muzzle.global_transform.basis.z
 		new_boulder.apply_central_impulse(launch_direction * 90.0)
 		new_boulder.hit_enemy.connect(_on_boulder_hit_enemy)   #fixed dis FOR THE LAST TIME
-func _on_boulder_hit_enemy(enemy: Node3D) -> void:
+func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
 	print("Player got notified: boulder hit ", enemy.name)
 
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀

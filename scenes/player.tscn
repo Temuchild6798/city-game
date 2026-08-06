@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bexvrd71riery" path="res://models/strange-thing_sunflower leaves.jpg" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://cghk1tic4onh4" path="res://models/strange-thing_skin (copy 1).jpg" id="2_dqkch"]
 [ext_resource type="Texture2D" uid="uid://lac3nvu7bqqo" path="res://models/strange-thing_black.jpg" id="3_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://dn17ul1d3lnrh" path="res://other-assets/background.png" id="5_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://vdmpyrn5yii6" path="res://other-assets/greenbackpoop.png" id="6_fjrip"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ts4ig"]
 resource_name = "Material"
@@ -735,3 +737,13 @@ spring_length = 4.74
 [node name="muzzle" type="Node3D" parent="." unique_id=646528344]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6873145, -4.4837327)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=155541639]
+offset_left = 897.0
+offset_top = 607.0
+offset_right = 9897.0
+offset_bottom = 1687.0
+scale = Vector2(0.026446238, 0.026446238)
+value = 100.0
+texture_under = ExtResource("5_tuyoq")
+texture_progress = ExtResource("6_fjrip")
