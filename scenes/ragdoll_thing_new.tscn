@@ -721,14 +721,14 @@ _data = {
 &"move": SubResource("Animation_dvy86")
 }
 
-[node name="ragdoll-thing" type="Node3D" unique_id=1762751229]
+[node name="ragdoll-thing" type="Node3D" unique_id=1762751229 groups=["enemy"]]
 transform = Transform3D(-0.32353097, 0, -2.0938995e-08, 0, 0.32353097, 0, 2.0938995e-08, 0, -0.32353097, 0, 0, 0)
 script = ExtResource("1_qg02w")
 
-[node name="ragdoll" type="Node3D" parent="." unique_id=951835100]
+[node name="ragdoll" type="Node3D" parent="." unique_id=951835100 groups=["enemy"]]
 transform = Transform3D(0.265508, 0, 0, 0, 0.265508, 0, 0, 0, 0.265508, -1.7, 0, 0)
 
-[node name="body" type="RigidBody3D" parent="ragdoll" unique_id=1884012290]
+[node name="body" type="RigidBody3D" parent="ragdoll" unique_id=1884012290 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -738,15 +738,15 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="body" type="MeshInstance3D" parent="ragdoll/body" unique_id=960020730]
+[node name="body" type="MeshInstance3D" parent="ragdoll/body" unique_id=960020730 groups=["enemy"]]
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0)
 mesh = SubResource("ArrayMesh_s7cf6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/body" unique_id=476866296]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/body" unique_id=476866296 groups=["enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2694993, 5.929239, 0.035705503)
 shape = SubResource("BoxShape3D_qfnet")
 
-[node name="head" type="RigidBody3D" parent="ragdoll" unique_id=2015107527]
+[node name="head" type="RigidBody3D" parent="ragdoll" unique_id=2015107527 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, -4.7683716e-07, 0, 0)
 mass = 0.002
@@ -756,18 +756,18 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="head" type="MeshInstance3D" parent="ragdoll/head" unique_id=1388194403]
+[node name="head" type="MeshInstance3D" parent="ragdoll/head" unique_id=1388194403 groups=["enemy"]]
 transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 4.7683716e-07, 0, 0)
 mesh = SubResource("ArrayMesh_tp5bs")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/head" unique_id=1342410429]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/head" unique_id=1342410429 groups=["enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.414478, 10.901645, 0)
 shape = SubResource("CapsuleShape3D_cena2")
 
-[node name="right_arm" type="Node3D" parent="ragdoll" unique_id=331635914]
+[node name="right_arm" type="Node3D" parent="ragdoll" unique_id=331635914 groups=["enemy"]]
 transform = Transform3D(0.4226183, -0.90630794, -3.7368288e-08, 0.90630794, 0.4226183, 5.8656436e-08, -3.7368263e-08, -5.865645e-08, 1.0000001, 8.974394, 1.1248457, 5.808248e-07)
 
-[node name="right-arm" type="RigidBody3D" parent="ragdoll/right_arm" unique_id=1993070301]
+[node name="right-arm" type="RigidBody3D" parent="ragdoll/right_arm" unique_id=1993070301 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 7.1054274e-15, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -777,15 +777,15 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="right-arm" type="MeshInstance3D" parent="ragdoll/right_arm/right-arm" unique_id=1067058592]
+[node name="right-arm" type="MeshInstance3D" parent="ragdoll/right_arm/right-arm" unique_id=1067058592 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_3kpox")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_arm/right-arm" unique_id=1755787405]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_arm/right-arm" unique_id=1755787405 groups=["enemy"]]
 transform = Transform3D(-4.3711392e-08, 1, 0, -1, -4.3711392e-08, 0, 0, 0, 1, 1.4976916, 7.502331, 0)
 shape = SubResource("CapsuleShape3D_txqlw")
 
-[node name="right-hand" type="RigidBody3D" parent="ragdoll/right_arm" unique_id=423830105]
+[node name="right-hand" type="RigidBody3D" parent="ragdoll/right_arm" unique_id=423830105 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 7.1054274e-15, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -795,18 +795,18 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="right-hand" type="MeshInstance3D" parent="ragdoll/right_arm/right-hand" unique_id=805178263]
+[node name="right-hand" type="MeshInstance3D" parent="ragdoll/right_arm/right-hand" unique_id=805178263 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_vfqcy")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_arm/right-hand" unique_id=1307239317]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_arm/right-hand" unique_id=1307239317 groups=["enemy"]]
 transform = Transform3D(-4.371077e-08, -0.99998164, 0, 0.99998164, -4.371077e-08, 0, 0, 0, 0.99998164, -3.4617095, 7.521791, 0)
 shape = SubResource("CapsuleShape3D_c78u3")
 
-[node name="left_arm" type="Node3D" parent="ragdoll" unique_id=1133205289]
+[node name="left_arm" type="Node3D" parent="ragdoll" unique_id=1133205289 groups=["enemy"]]
 transform = Transform3D(0.42261833, 0.90630794, -3.7368284e-08, -0.90630805, 0.4226183, -5.865643e-08, -3.736827e-08, 5.865645e-08, 1, -1.6004796, 12.314792, -1.0358349e-07)
 
-[node name="left-arm" type="RigidBody3D" parent="ragdoll/left_arm" unique_id=2040807931]
+[node name="left-arm" type="RigidBody3D" parent="ragdoll/left_arm" unique_id=2040807931 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 7.1054274e-15, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -816,15 +816,15 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="left-arm" type="MeshInstance3D" parent="ragdoll/left_arm/left-arm" unique_id=191148592]
+[node name="left-arm" type="MeshInstance3D" parent="ragdoll/left_arm/left-arm" unique_id=191148592 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_85anj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_arm/left-arm" unique_id=1329343682]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_arm/left-arm" unique_id=1329343682 groups=["enemy"]]
 transform = Transform3D(-4.3710287e-08, 0.99997014, 0, -0.99997014, -4.3710287e-08, 0, 0, 0, 0.99997014, 11.010654, 7.639777, 0)
 shape = SubResource("CapsuleShape3D_u6rex")
 
-[node name="left-hand" type="RigidBody3D" parent="ragdoll/left_arm" unique_id=1326871340]
+[node name="left-hand" type="RigidBody3D" parent="ragdoll/left_arm" unique_id=1326871340 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0)
 mass = 0.002
@@ -834,17 +834,17 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="left-hand" type="MeshInstance3D" parent="ragdoll/left_arm/left-hand" unique_id=1516847440]
+[node name="left-hand" type="MeshInstance3D" parent="ragdoll/left_arm/left-hand" unique_id=1516847440 groups=["enemy"]]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
 mesh = SubResource("ArrayMesh_bl06o")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_arm/left-hand" unique_id=232260176]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_arm/left-hand" unique_id=232260176 groups=["enemy"]]
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 16.053802, 7.518328, 0)
 shape = SubResource("CapsuleShape3D_k8uo4")
 
-[node name="right_leg" type="Node3D" parent="ragdoll" unique_id=1986575836]
+[node name="right_leg" type="Node3D" parent="ragdoll" unique_id=1986575836 groups=["enemy"]]
 
-[node name="right-thigh" type="RigidBody3D" parent="ragdoll/right_leg" unique_id=1364862104]
+[node name="right-thigh" type="RigidBody3D" parent="ragdoll/right_leg" unique_id=1364862104 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 7.1054274e-15, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -854,15 +854,15 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="right-thigh" type="MeshInstance3D" parent="ragdoll/right_leg/right-thigh" unique_id=95644096]
+[node name="right-thigh" type="MeshInstance3D" parent="ragdoll/right_leg/right-thigh" unique_id=95644096 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_0qp8g")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_leg/right-thigh" unique_id=1549898002]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_leg/right-thigh" unique_id=1549898002 groups=["enemy"]]
 transform = Transform3D(0.9999667, 0, 0, 0, 0.9999667, 0, 0, 0, 0.9999667, 5.126192, -0.5573598, 0)
 shape = SubResource("CapsuleShape3D_deku5")
 
-[node name="right-foot" type="RigidBody3D" parent="ragdoll/right_leg" unique_id=2017768782]
+[node name="right-foot" type="RigidBody3D" parent="ragdoll/right_leg" unique_id=2017768782 groups=["enemy"]]
 unique_name_in_owner = true
 mass = 0.002
 can_sleep = false
@@ -871,17 +871,17 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="right-foot" type="MeshInstance3D" parent="ragdoll/right_leg/right-foot" unique_id=1240795622]
+[node name="right-foot" type="MeshInstance3D" parent="ragdoll/right_leg/right-foot" unique_id=1240795622 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_p2bjm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_leg/right-foot" unique_id=284719013]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/right_leg/right-foot" unique_id=284719013 groups=["enemy"]]
 transform = Transform3D(0.9999795, 0, 0, 0, 0.9999795, 0, 0, 0, 0.9999795, 5.1415224, -6.1051965, 0)
 shape = SubResource("CapsuleShape3D_v53lp")
 
-[node name="left_leg" type="Node3D" parent="ragdoll" unique_id=1758186820]
+[node name="left_leg" type="Node3D" parent="ragdoll" unique_id=1758186820 groups=["enemy"]]
 
-[node name="left-thigh" type="RigidBody3D" parent="ragdoll/left_leg" unique_id=1656507439]
+[node name="left-thigh" type="RigidBody3D" parent="ragdoll/left_leg" unique_id=1656507439 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 7.1054274e-15, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -891,15 +891,15 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="left-thigh" type="MeshInstance3D" parent="ragdoll/left_leg/left-thigh" unique_id=435522734]
+[node name="left-thigh" type="MeshInstance3D" parent="ragdoll/left_leg/left-thigh" unique_id=435522734 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_sqp8r")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_leg/left-thigh" unique_id=780327191]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_leg/left-thigh" unique_id=780327191 groups=["enemy"]]
 transform = Transform3D(0.99997354, 0, 0, 0, 0.99997354, 0, 0, 0, 0.99997354, 7.6250544, -0.55735993, 0)
 shape = SubResource("CapsuleShape3D_deku5")
 
-[node name="left-foot" type="RigidBody3D" parent="ragdoll/left_leg" unique_id=668687043]
+[node name="left-foot" type="RigidBody3D" parent="ragdoll/left_leg" unique_id=668687043 groups=["enemy"]]
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 7.1054274e-15, 0, 0.99999994, 0, 0, 0)
 mass = 0.002
@@ -909,11 +909,11 @@ freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 1
 
-[node name="left-foot" type="MeshInstance3D" parent="ragdoll/left_leg/left-foot" unique_id=1608853334]
+[node name="left-foot" type="MeshInstance3D" parent="ragdoll/left_leg/left-foot" unique_id=1608853334 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("ArrayMesh_7hgd4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_leg/left-foot" unique_id=2050158104]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ragdoll/left_leg/left-foot" unique_id=2050158104 groups=["enemy"]]
 transform = Transform3D(0.99997973, 0, 0, 0, 0.99997973, 0, 0, 0, 0.99997973, 7.7141385, -6.1051974, 0)
 shape = SubResource("CapsuleShape3D_v53lp")
 

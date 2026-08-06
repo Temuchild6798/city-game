@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dghhu5l6lal2g"]
+
+[ext_resource type="Texture2D" uid="uid://dn17ul1d3lnrh" path="res://other-assets/background.png" id="1_x4jx1"]
+[ext_resource type="Texture2D" uid="uid://vdmpyrn5yii6" path="res://other-assets/greenbackpoop.png" id="2_yev5y"]
+
+[node name="ui" type="Node2D" unique_id=493848459]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=410552879]
+offset_left = 897.0
+offset_top = 607.0
+offset_right = 9897.0
+offset_bottom = 1687.0
+scale = Vector2(0.026446238, 0.026446238)
+value = 100.0
+texture_under = ExtResource("1_x4jx1")
+texture_progress = ExtResource("2_yev5y")

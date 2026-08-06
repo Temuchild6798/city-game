@@ -12430,3 +12430,14 @@ shape = SubResource("CapsuleShape3D_v53lp")
 transform = Transform3D(0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 5.142597, -3.6736891, 0)
 node_a = NodePath("../right-thigh")
 node_b = NodePath("../right-foot")
+
+[node name="Path3D3" type="Path3D" parent="." unique_id=1798617250]
+transform = Transform3D(0.8012465, 0, 0.5983344, 0, 1, 0, -0.5983344, 0, 0.8012465, -29.510098, 0.6880285, 11.84878)
+curve = SubResource("Curve3D_qfnet")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D3" unique_id=645180588]
+transform = Transform3D(0.7709099, 0, -0.6369154, 0, 0.9999955, 0, 0.6369164, 0, 0.7709087, -1.54, 0, -1.845)
+script = ExtResource("7_i7141")
+
+[node name="ragdoll-thing" parent="Path3D3/PathFollow3D" unique_id=1483700483 instance=ExtResource("5_71j4m")]
+transform = Transform3D(-0.32353097, 0, -4.885182e-08, 0, 0.32353097, 0, 4.885182e-08, 0, -0.32353097, -0.19611692, -0.023809195, 0.025980711)

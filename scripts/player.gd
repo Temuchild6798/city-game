@@ -68,7 +68,9 @@ func use_item():
 		get_tree().root.add_child(new_boulder)
 		var launch_direction = -%muzzle.global_transform.basis.z
 		new_boulder.apply_central_impulse(launch_direction * 90.0)
-
+		new_boulder.hit_enemy.connect(_on_boulder_hit_enemy)   #fixed dis FOR THE LAST TIME
+func _on_boulder_hit_enemy(enemy: Node3D) -> void:
+	print("Player got notified: boulder hit ", enemy.name)
 
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 #⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠒⠈⠉⣠⣤⣤⣄⠈⠁⠒⢤⣤⣤⡀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
