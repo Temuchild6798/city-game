@@ -47,7 +47,7 @@ func _physics_process(delta):
 		if Input.is_action_pressed("jump"):
 			velocity.y = jump
 	if input_direction.length() > 0:
-		%AnimationPlayer.play("move")
+		%AnimationPlayer.play("move") #peak animation
 	else:
 		%AnimationPlayer.play("RESET")
 	if dead == false:
@@ -70,8 +70,13 @@ func use_item():
 		new_boulder.apply_central_impulse(launch_direction * 90.0)
 		new_boulder.hit_enemy.connect(_on_boulder_hit_enemy)   #fixed dis FOR THE LAST TIME
 func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
-	print("Player got notified: boulder hit ", enemy.name)
-	%progress.value -= 1
+	print("67676767 ", enemy.name)
+	%progress.value -= 0.8
+	if %progress.value <= 0:
+		if enemy.has_method("break_neck"):
+			enemy.break_neck()
+		elif enemy.get_parent() and enemy.get_parent().has_method("break_neck"):
+			enemy.get_parent().break_neck()
 
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 #⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠒⠈⠉⣠⣤⣤⣄⠈⠁⠒⢤⣤⣤⡀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿

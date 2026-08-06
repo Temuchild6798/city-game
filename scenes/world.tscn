@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://bpb714gdan6au" path="res://scripts/path_follow_3daa.gd" id="7_i7141"]
 [ext_resource type="AudioStream" uid="uid://bb5c2rpnrugdw" path="res://other-assets/oldmacdonaldtrump.ogg" id="8_4mrxx"]
 [ext_resource type="Texture2D" uid="uid://bmo5e4xh0dux3" path="res://models/ragdoll_2x2grey.png" id="9_7r4gi"]
+[ext_resource type="Script" uid="uid://cgq82ti3cfk2g" path="res://scripts/something.gd" id="9_w7kh3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5uuo"]
 sky_top_color = Color(0.04254709, 0.56455094, 0.81999105, 1)
@@ -12276,6 +12277,7 @@ transform = Transform3D(1.5872295, 0, 0, 0, 1.5872295, 0, 0, 0, 1.5872295, -28.9
 
 [node name="ragdoll" type="Node3D" parent="ragdoll-thing" unique_id=1296227434 groups=["enemy"]]
 transform = Transform3D(0.39772084, 0, 0, 0, 0.39772084, 0, 0, 0, 0.39772084, -2.7690716, -1.6454864, 0)
+script = ExtResource("9_w7kh3")
 
 [node name="body" type="RigidBody3D" parent="ragdoll-thing/ragdoll" unique_id=361339937 groups=["enemy"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
@@ -12300,6 +12302,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.414478, 10.901645, 0)
 shape = SubResource("CapsuleShape3D_cena2")
 
 [node name="neck-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1305649923 groups=["enemy"]]
+unique_name_in_owner = true
 transform = Transform3D(0.9999992, 0, 0, 0, 0.9999992, 0, 0, 0, 0.9999992, 6.2709856, 8.97859, -0.30401793)
 node_a = NodePath("../body")
 node_b = NodePath("../head")
