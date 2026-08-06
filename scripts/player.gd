@@ -71,6 +71,7 @@ func use_item():
 		new_boulder.hit_enemy.connect(_on_boulder_hit_enemy)   #fixed dis FOR THE LAST TIME
 func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
 	print("Player got notified: boulder hit ", enemy.name)
+	%progress.value -= 1
 
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 #⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠒⠈⠉⣠⣤⣤⣄⠈⠁⠒⢤⣤⣤⡀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
