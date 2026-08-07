@@ -5,7 +5,7 @@ var speed = 5
 var jump = 10
 var dead = false
 var front_view = false
-
+var temu = true
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 func _process(delta):
@@ -71,8 +71,11 @@ func use_item():
 		new_boulder.hit_enemy.connect(_on_boulder_hit_enemy)   #fixed dis FOR THE LAST TIME
 func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
 	print("67676767 ", enemy.name)
-	%progress.value -= 1
+	%progress.value -= 1.5
 	if %progress.value <= 0:
+		if temu == true:
+			$AudioStreamPlayer3D2.play()
+			temu = false
 		if enemy.has_method("break_neck"):
 			enemy.break_neck()
 		elif enemy.get_parent() and enemy.get_parent().has_method("break_neck"):
