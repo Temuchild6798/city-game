@@ -12302,7 +12302,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.414478, 10.901645, 0)
 shape = SubResource("CapsuleShape3D_cena2")
 
 [node name="neck-joint" type="ConeTwistJoint3D" parent="ragdoll-thing/ragdoll" unique_id=1305649923 groups=["enemy"]]
-unique_name_in_owner = true
 transform = Transform3D(0.9999992, 0, 0, 0, 0.9999992, 0, 0, 0, 0.9999992, 6.2709856, 8.97859, -0.30401793)
 node_a = NodePath("../body")
 node_b = NodePath("../head")
