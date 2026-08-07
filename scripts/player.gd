@@ -71,7 +71,7 @@ func use_item():
 		new_boulder.hit_enemy.connect(_on_boulder_hit_enemy)   #fixed dis FOR THE LAST TIME
 func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
 	print("67676767 ", enemy.name)
-	%progress.value -= 8
+	%progress.value -= 1
 	if %progress.value <= 0:
 		if enemy.has_method("break_neck"):
 			enemy.break_neck()

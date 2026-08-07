@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://bb5c2rpnrugdw" path="res://other-assets/oldmacdonaldtrump.ogg" id="8_4mrxx"]
 [ext_resource type="Texture2D" uid="uid://bmo5e4xh0dux3" path="res://models/ragdoll_2x2grey.png" id="9_7r4gi"]
 [ext_resource type="Script" uid="uid://cgq82ti3cfk2g" path="res://scripts/something.gd" id="9_w7kh3"]
+[ext_resource type="Texture2D" uid="uid://dsickkxe6bh3m" path="res://other-assets/enemysign.png" id="11_e3hyu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5uuo"]
 sky_top_color = Color(0.04254709, 0.56455094, 0.81999105, 1)
@@ -12443,3 +12444,9 @@ script = ExtResource("7_i7141")
 
 [node name="ragdoll-thing" parent="Path3D3/PathFollow3D" unique_id=1483700483 instance=ExtResource("5_71j4m")]
 transform = Transform3D(-0.32353097, 0, -4.885182e-08, 0, 0.32353097, 0, 4.885182e-08, 0, -0.32353097, -0.19611692, -0.023809195, 0.025980711)
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1988930866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.452902, 22.69006, -36.94661)
+billboard = 2
+double_sided = false
+texture = ExtResource("11_e3hyu")
