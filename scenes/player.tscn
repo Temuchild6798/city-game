@@ -741,10 +741,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6873145, -4.4837327)
 
 [node name="progress" type="TextureProgressBar" parent="." unique_id=155541639]
 unique_name_in_owner = true
-offset_left = 464.0
-offset_top = 11.0
-offset_right = 9464.0
-offset_bottom = 1091.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.037
+anchor_right = 0.5
+anchor_bottom = 0.037
+offset_left = -113.0
+offset_top = -15.959999
+offset_right = 8887.0
+offset_bottom = 1064.04
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.026446238, 0.026446238)
 step = 0.5
 value = 100.0

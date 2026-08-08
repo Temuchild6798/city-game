@@ -57,8 +57,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if front_view:
 		return
 	if event is InputEventMouseMotion:
-		rotation_degrees.y -= event.relative.x * 0.3
-		%pivot_point.rotation_degrees.x -= event.relative.y * 0.3
+		rotation_degrees.y -= event.relative.x * 0.1
+		%pivot_point.rotation_degrees.x -= event.relative.y * 0.1
 		%pivot_point.rotation_degrees.x = clamp(%pivot_point.rotation_degrees.x, -60, 60)
 func use_item():
 	if Input.is_action_just_pressed("shoot"):
