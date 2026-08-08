@@ -79,7 +79,7 @@ func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
 		if enemy.has_method("break_neck"):
 			enemy.break_neck()
 		elif enemy.get_parent() and enemy.get_parent().has_method("break_neck"):
-			enemy.get_parent().break_neck()
+			enemy.get_parent().break_neck();
 
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 #⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠒⠈⠉⣠⣤⣤⣄⠈⠁⠒⢤⣤⣤⡀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
