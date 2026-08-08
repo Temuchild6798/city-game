@@ -75,7 +75,7 @@ func _on_boulder_hit_enemy(enemy: Node3D) -> void:             # YES IT WORKS
 	if %progress.value <= 0:
 		if temu == true:
 			$AudioStreamPlayer3D2.play()
-			temu = false;
+			temu = false
 		if enemy.has_method("break_neck"):
 			enemy.break_neck()
 		elif enemy.get_parent() and enemy.get_parent().has_method("break_neck"):
